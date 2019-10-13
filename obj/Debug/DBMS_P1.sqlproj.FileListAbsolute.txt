@@ -1,0 +1,6 @@
+C:\Users\Cameron.Siemens\source\repos\DBMS_P1\bin\Debug\DBMS_P1.dacpac
+C:\Users\Cameron.Siemens\source\repos\DBMS_P1\bin\Debug\DBMS_P1.dll
+C:\Users\Cameron.Siemens\source\repos\DBMS_P1\bin\Debug\DBMS_P1.pdb
+C:\Users\Cameron.Siemens\source\repos\DBMS_P1\obj\Debug\DBMS_P1.sqlprojAssemblyReference.cache
+C:\Users\Cameron.Siemens\source\repos\DBMS_P1\obj\Debug\DBMS_P1.dll
+C:\Users\Cameron.Siemens\source\repos\DBMS_P1\obj\Debug\DBMS_P1.pdb

@@ -1,0 +1,34 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[Application] (Table)
+       [dbo].[Developer] (Table)
+       [dbo].[Downloads] (Table)
+       [dbo].[Review] (Table)
+       [dbo].[User] (Table)
+       Default Constraint: unnamed constraint on [dbo].[Developer] (Default Constraint)
+       Default Constraint: unnamed constraint on [dbo].[User] (Default Constraint)
+       [dbo].[FK_Application_ToDeveloper] (Foreign Key)
+       [dbo].[FK_Downloads_UID] (Foreign Key)
+       [dbo].[FK_Downloads_AppID] (Foreign Key)
+       [dbo].[FK_Review_ToUser] (Foreign Key)
+       [dbo].[FK_Review_ToApplication] (Foreign Key)
+       [dbo].[chk_dev_sex] (Check Constraint)
+       [dbo].[chk_dev_phone] (Check Constraint)
+       [dbo].[chk_dev_acct] (Check Constraint)
+       [dbo].[chk_dev_routing] (Check Constraint)
+       [dbo].[CK_Downloads_CardNum] (Check Constraint)
+       [dbo].[chk_rating] (Check Constraint)
+       [dbo].[chk_user_sex] (Check Constraint)
+       [dbo].[chk_user_phone] (Check Constraint)
+
+** Supporting actions
