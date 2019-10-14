@@ -1,3 +1,0 @@
-# Requires pandoc from https://pandoc.org/
-
-pandoc.exe -f latex -t docx .\report\Project1_CSC484_F19.tex -o .\report\pa1_csc484_fa19.docx

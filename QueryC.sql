@@ -13,7 +13,10 @@ SELECT [AppID]
   FROM [dbo].[Application]
 GO
 
-SELECT Name, Email FROM dbo.Application 
-INNER JOIN dbo.Developer ON dbo.Application.DeveloperSSN=dbo.Developer.SSN 
-INNER JOIN dbo.Review ON dbo.Review.AppID=dbo.Application.AppID 
-WHERE dbo.Review.Rating = 5
+
+SELECT Name FROM dbo.Application
+WHERE AppID IN
+(SELECT AppID
+FROM Review
+GROUP BY AppID
+HAVING AVG(Rating) >= 4)

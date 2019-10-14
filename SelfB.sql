@@ -13,7 +13,7 @@ SELECT [AppID]
   FROM [dbo].[Application]
 GO
 
-SELECT Name, Email FROM dbo.Application 
-INNER JOIN dbo.Developer ON dbo.Application.DeveloperSSN=dbo.Developer.SSN 
-INNER JOIN dbo.Review ON dbo.Review.AppID=dbo.Application.AppID 
-WHERE dbo.Review.Rating = 5
+-- Order Application category by average Price
+SELECT Category, AVG(Price) FROM dbo.Application
+GROUP BY Category
+ORDER BY AVG(Price)

@@ -4,3 +4,13 @@ C:\Users\Cameron.Siemens\source\repos\DBMS_P1\bin\Debug\DBMS_P1.pdb
 C:\Users\Cameron.Siemens\source\repos\DBMS_P1\obj\Debug\DBMS_P1.dll
 C:\Users\Cameron.Siemens\source\repos\DBMS_P1\obj\Debug\DBMS_P1.pdb
 C:\Users\Cameron.Siemens\source\repos\DBMS_P1\obj\Debug\DBMS_P1.sqlprojAssemblyReference.cache
+B:\Users\Ben\Development\DBMS_P1\bin\Debug\DBMS_P1.dacpac
+B:\Users\Ben\Development\DBMS_P1\bin\Debug\DBMS_P1.dll
+B:\Users\Ben\Development\DBMS_P1\bin\Debug\DBMS_P1.pdb
+B:\Users\Ben\Development\DBMS_P1\obj\Debug\DBMS_P1.sqlprojAssemblyReference.cache
+B:\Users\Ben\Development\DBMS_P1\obj\Debug\Model.xml
+B:\Users\Ben\Development\DBMS_P1\obj\Debug\refactor.xml
+B:\Users\Ben\Development\DBMS_P1\obj\Debug\postdeploy.sql
+B:\Users\Ben\Development\DBMS_P1\obj\Debug\predeploy.sql
+B:\Users\Ben\Development\DBMS_P1\obj\Debug\DBMS_P1.dll
+B:\Users\Ben\Development\DBMS_P1\obj\Debug\DBMS_P1.pdb
