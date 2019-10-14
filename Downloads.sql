@@ -2,7 +2,7 @@
 (
 	[UID] INT NOT NULL, 
     [AppID] INT NOT NULL, 
-    [TransactionTime] TIMESTAMP NOT NULL, 
+    [TransactionTime] DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP, 
     [Amount] MONEY NOT NULL, 
     [CardType] NVARCHAR(16) NULL, 
     [CardNum] NVARCHAR(19) NULL, 
@@ -13,6 +13,17 @@
     CONSTRAINT [FK_Downloads_AppID] FOREIGN KEY ([AppID]) REFERENCES [Application]([AppID]), 
     CONSTRAINT [CK_Downloads_CardNum] CHECK (CardNum between 111111111111111 and 9999999999999999999), 
     CONSTRAINT [CK_Downloads_CICNum] CHECK (CICNum between 111 and 999), 
-    CONSTRAINT [FK_Downloads_BillingAddress] FOREIGN KEY ([BillingAddress]) REFERENCES [BillingAddress]([UID])
+    CONSTRAINT [FK_Downloads_BillingAddress] FOREIGN KEY ([BillingAddress]) REFERENCES [BillingAddress]([AddressID]),
+
 
 )
+
+GO
+
+CREATE TRIGGER [dbo].[Trigger_Downloads]
+    ON [dbo].[Downloads]
+    AFTER INSERT
+    AS
+    BEGIN
+        SET NoCount ON
+    END

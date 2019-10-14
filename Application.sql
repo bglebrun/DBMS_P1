@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[Application]
 (
-	[AppID] INT NOT NULL PRIMARY KEY, 
+	[AppID] INT NOT NULL PRIMARY KEY IDENTITY (1,1), 
     [Name] NVARCHAR(50) NULL, 
     [Platform] NVARCHAR(10) NOT NULL, 
     [OSVersion] NVARCHAR(15) NOT NULL, 

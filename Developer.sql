@@ -14,5 +14,6 @@
 	CONSTRAINT chk_dev_sex CHECK( SEX IN('M', 'F')),
 	CONSTRAINT chk_dev_phone CHECK( Phone between 11111111111 and 99999999999),
 	CONSTRAINT chk_dev_acct CHECK( AccountNum between 1 and 99999999999999999),
-	CONSTRAINT chk_dev_routing CHECK( RoutingNum between 111111111 and 999999999) 
+	CONSTRAINT chk_dev_routing CHECK( RoutingNum between 111111111 and 999999999), 
+    CONSTRAINT [CK_Developer_SSN] CHECK ( SSN between 001111111 and 730999999) 
 )
