@@ -6,7 +6,7 @@
     [State] CHAR(2) NULL, 
     [Zipcode] INT NULL, 
     [UID] INT NOT NULL, 
-    CONSTRAINT [CK_BillingAddress_State] CHECK (State IN('AL', 'AK', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE', 'FL', 'GA', 'HI', 'ID', 'IL', 'IN', 'IA', 'KS', 'KY', 'LA', 'ME', 'MD', 'MA', 'MI', 'MN', 'MS', 'MO', 'MT', 'NE', 'NV', 'NH', 'NJ', 'NM', 'NY', 'NC', 'ND', 'OH', 'OK', 'OR', 'PA', 'RI', 'SC', 'SD', 'TN', 'TX', 'UT', 'VT', 'VA', 'WA', 'WV', 'WI', 'WY')), 
+    CONSTRAINT [CK_BillingAddress_State] CHECK (State IN('AK', 'AL', 'AR', 'AS', 'AZ', 'CA', 'CO', 'CT', 'DC', 'DE', 'FL', 'GA', 'GU', 'HI', 'IA', 'ID', 'IL', 'IN', 'KS', 'KY', 'LA', 'MA', 'MD', 'ME', 'MI', 'MN', 'MO', 'MP', 'MS', 'MT', 'NC', 'ND', 'NE', 'NH', 'NJ', 'NM', 'NV', 'NY', 'OH', 'OK', 'OR', 'PA', 'PR', 'RI', 'SC', 'SD', 'TN', 'TX', 'UM', 'UT', 'VA', 'VI', 'VT', 'WA', 'WI', 'WV', 'WY')), 
     CONSTRAINT [CK_BillingAddress_Zipcode] CHECK (Zipcode BETWEEN 11111 AND 99999), 
     CONSTRAINT [FK_BillingAddress_User] FOREIGN KEY ([UID]) REFERENCES [User]([UID])
 )
